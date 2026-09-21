@@ -1,0 +1,30 @@
+Statement ID
+Statement-Name
+Description
+Entry Condition
+Exit Condition
+S-01
+IDLE
+Robot waits for a delivery request.
+Robot is switched on or reaches the warehouse.
+Delivery request received.
+S-02
+NAVIGATING
+Robot moves toward the destination.
+Delivery request received.
+Destination reached, obstacle detected, or critical battery.
+S-03
+AVOIDING_OBSTACLE
+Robot temporarily stops normal navigation and avoids the obstacle.
+Obstacle detected.
+Obstacle successfully avoided.
+S-04
+DELIVERING
+Robot performs the package delivery.
+Destination reached.
+Package successfully delivered.
+S-05
+RETURNING
+Robot travels back to the warehouse.
+Delivery successful or critical battery.
+Warehouse reached.
